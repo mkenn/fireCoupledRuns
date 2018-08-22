@@ -1,0 +1,8 @@
+
+
+awk -f insert_fireIDs.awk < ../worldfiles/world.p301_30m_conifer_3.00 > ../worldfiles/world.p301_30m_conifer_3.00_fire
+
+
+
+
+

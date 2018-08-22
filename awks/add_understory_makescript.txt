@@ -1,0 +1,41 @@
+
+P300
+
+awk -f awks/add_understory_1.awk < ws_p300/worldfiles/world.p300_30m_1can > ws_p300/worldfiles/world.p300_30m_2can_tmp1
+
+awk -f awks/add_understory_2_p300.awk < ws_p300/worldfiles/world.p300_30m_2can_tmp1 > ws_p300/worldfiles/world.p300_30m_2can_tmp2
+
+awk -f awks/add_understory_3.awk < ws_p300/worldfiles/world.p300_30m_2can_tmp2 > ws_p300/worldfiles/world.p300_30m_2can
+
+
+
+P301
+
+awk -f add_understory_1.awk < ../worldfiles/world.p301_30m_conifer_3.00 > ../worldfiles/world.p301_30m_conifer_3.00_2canopy_tmp1
+
+awk -f add_understory_2.awk < ../worldfiles/world.p301_30m_conifer_3.00_2canopy_tmp1 > ../worldfiles/world.p301_30m_conifer_3.00_2canopy_tmp2
+
+awk -f add_understory_3.awk < ../worldfiles/world.p301_30m_conifer_3.00_2canopy_tmp2 > ../worldfiles/world.p301_30m_conifer_3.00_2canopy
+
+
+
+Santa Fe
+
+awk -f add_understory_1.awk < ../hja/worldfiles/world.hja.pcmb.r319.su440 > ../hja/worldfiles/world.tmp1
+
+awk -f add_understory_2_sf.awk < ../hja/worldfiles/world.tmp1 > ../hja/worldfiles/world.tmp2
+
+awk -f add_understory_3.awk < ../hja/worldfiles/world.tmp2 > ../hja/worldfiles/world.hja.pcmb.r319.su440
+
+
+
+HJA
+
+awk -f add_understory_1.awk < ../hja/worldfiles/world.hja.pcmb.r319.su440.Fire > ../hja/worldfiles/world.tmp1
+
+awk -f add_understory_2_hja.awk < ../hja/worldfiles/world.tmp1 > ../hja/worldfiles/world.tmp2
+
+awk -f add_understory_3.awk < ../hja/worldfiles/world.tmp2 > ../hja/worldfiles/world.hja.pcmb.r319.su440.Fire.2can
+
+
+

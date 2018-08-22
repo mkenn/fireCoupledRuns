@@ -1,0 +1,3 @@
+
+awk -f change.world.cover_fraction.awk < ../ws_hja/worldfiles/world.hja.1can.fire > ../ws_hja/worldfiles/world.hja.1can.fire_new
+
